@@ -96,6 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
         //   children: [
         Form(
           key: _formKey, child: Column(children: [
+          SizedBox(height: 20.0 ,),
             Text("Tanggal"),
           TextFormField(
             controller: tanggalController,
@@ -114,6 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             keyboardType: TextInputType.number,
           ),
+          SizedBox(height: 20.0 ,),
           Text("Bulan"),
           TextFormField(
             controller: bulanController,
@@ -132,6 +134,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             keyboardType: TextInputType.number,
           ),
+          SizedBox(height: 20.0 ,),
           Text("Tahun"),
           TextFormField(
             controller: tahunController,
@@ -154,6 +157,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ,)
           ,),
         // ],),
+        SizedBox(height: 20.0 ,),
         RaisedButton(child: Text("Cek Umur"),onPressed: (){
           if (_formKey.currentState.validate()) {
             f1(tanggalController.text, bulanController.text,
